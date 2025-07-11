@@ -1,0 +1,22 @@
+{
+  "type": "starsky_explority:extracting",
+  "id": "starsky_explority:silver_nugget_from_raw_silver",
+  "input": {
+    "id": "starsky_explority:raw_silver",
+    "Count": 1
+  },
+  "result": [
+    {
+      "id": "starsky_explority:silver_nugget",
+      "Count": 2
+    },
+    {
+      "id": "minecraft:air",
+      "Count": 1
+    },
+    {
+      "id": "minecraft:air",
+      "Count": 1
+    }
+  ]
+}

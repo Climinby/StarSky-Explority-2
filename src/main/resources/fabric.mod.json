@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "starsky_explority",
+	"version": "${version}",
+	"name": "StarSky: Explority",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Climinby"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "asssts/starsky_explority/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.climinby.starsky_explority.StarSkyExplority"
+		],
+		"client": [
+			"com.climinby.starsky_explority.StarSkyExplorityClient"
+		],
+		"fabric-datagen": [
+			"com.climinby.starsky_explority.StarSkyExplorityDataGenerator"
+		],
+		"rei_client": [
+			"com.climinby.starsky_explority.client.rei.SSEREIClientPlugin"
+		]
+	},
+	"mixins": [
+		"starsky_explority.mixins.json",
+		{
+			"config": "starsky_explority.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

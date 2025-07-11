@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "starsky_explority:silver_nugget"
+    }
+  },
+  "result": {
+    "item": "starsky_explority:silver_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "starsky_explority:block/moon_soil",
+    "side": "starsky_explority:block/moonveil_moss_side",
+    "top": "starsky_explority:block/moonveil_moss_top"
+  }
+}

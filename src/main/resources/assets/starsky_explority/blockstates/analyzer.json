@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=south,working=true": {"model": "starsky_explority:block/analyzer_working"},
+    "facing=south,working=false": {"model": "starsky_explority:block/analyzer"},
+    "facing=west,working=true": {"model": "starsky_explority:block/analyzer_working", "y": 90},
+    "facing=west,working=false": {"model": "starsky_explority:block/analyzer", "y": 90},
+    "facing=north,working=true": {"model": "starsky_explority:block/analyzer_working", "y": 180},
+    "facing=north,working=false": {"model": "starsky_explority:block/analyzer", "y": 180},
+    "facing=east,working=true": {"model": "starsky_explority:block/analyzer_working", "y": 270},
+    "facing=east,working=false": {"model": "starsky_explority:block/analyzer", "y": 270}
+  }
+}

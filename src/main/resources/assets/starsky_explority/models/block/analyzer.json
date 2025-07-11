@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "north": "starsky_explority:block/analyzer/analyzer_back",
+    "south": "starsky_explority:block/analyzer/analyzer_front",
+    "east": "starsky_explority:block/analyzer/analyzer_side_1",
+    "west": "starsky_explority:block/analyzer/analyzer_side",
+    "up": "starsky_explority:block/analyzer/analyzer_top",
+    "down": "starsky_explority:block/analyzer/analyzer_bottom",
+    "particle": "starsky_explority:block/analyzer/analyzer_front"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "pattern": [
+    "A  ",
+    "B  ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "starsky_explority:netherite_collector",
+    "count": 1
+  }
+}

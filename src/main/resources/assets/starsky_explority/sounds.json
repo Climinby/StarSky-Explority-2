@@ -1,0 +1,33 @@
+{
+  "entity.lunarian.sight_lock": {
+    "subtitle": "sound.starsky_explority.entity.lunarian.sight_lock",
+    "sounds": [
+      "starsky_explority:lunarian_sight_lock"
+    ]
+  },
+  "entity.lunarian.teleport": {
+    "subtitle": "sound.starsky_explority.entity.lunarian.teleport",
+    "sounds": [
+      "starsky_explority:lunarian_teleport"
+    ]
+  },
+  "entity.player.research_complete": {
+    "subtitle": "sound.starsky_explority.entity.player.research_complete",
+    "sounds": [
+      "random/levelup"
+    ]
+  },
+  "item.research_book.use": {
+    "subtitle": "sound.starsky_explority.item.research_book.use",
+    "sounds": [
+      "mob/bat/takeoff"
+    ]
+  },
+  "item.research_book.fail": {
+    "subtitle": "sound.starsky_explority.item.research_book.fail",
+    "sounds": [
+      "mob/endermen/portal",
+      "mob/endermen/portal2"
+    ]
+  }
+}

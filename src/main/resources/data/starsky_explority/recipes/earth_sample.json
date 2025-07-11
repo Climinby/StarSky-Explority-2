@@ -1,0 +1,30 @@
+{
+  "type": "starsky_explority:analyzing",
+  "input": {
+    "id": "starsky_explority:sample_earth",
+    "Count": 1
+  },
+  "result": [
+    {
+      "id": "starsky_explority:research_book_silver",
+      "Count": 1
+    },
+    {
+      "id": "starsky_explority:research_book_aluminium",
+      "Count": 1
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "Count": 4
+    },
+    {
+      "id": "minecraft:coarse_dirt",
+      "Count": 1
+    },
+    {
+      "id": "minecraft:air",
+      "Count": 1
+    }
+  ],
+  "weight": [2, 8, 20, 70, 0]
+}

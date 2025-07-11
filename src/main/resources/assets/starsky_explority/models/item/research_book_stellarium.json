@@ -1,0 +1,9 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "starsky_explority:item/research_book_0",
+    "layer1": "starsky_explority:item/stellarium_ingot_0",
+    "layer2": "starsky_explority:item/stellarium_ingot_1",
+    "layer3": "starsky_explority:item/research_book_1"
+  }
+}

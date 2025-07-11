@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "south": "starsky_explority:block/extractor/extractor_side",
+    "north": "starsky_explority:block/extractor/extractor_front_off",
+    "east": "starsky_explority:block/extractor/extractor_side",
+    "west": "starsky_explority:block/extractor/extractor_side",
+    "up": "starsky_explority:block/extractor/extractor_top",
+    "down": "starsky_explority:block/extractor/extractor_bottom",
+    "particle": "starsky_explority:block/extractor/extractor_top"
+  }
+}

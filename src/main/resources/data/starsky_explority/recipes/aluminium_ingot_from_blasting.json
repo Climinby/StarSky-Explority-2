@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.7,
+  "ingredient": {
+    "item": "starsky_explority:raw_aluminium"
+  },
+  "result": "starsky_explority:aluminium_ingot"
+}

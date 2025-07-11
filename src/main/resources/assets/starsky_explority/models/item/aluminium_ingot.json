@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "starsky_explority:item/aluminium_ingot"
+  }
+}

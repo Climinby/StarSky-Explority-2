@@ -1,0 +1,22 @@
+{
+  "type": "starsky_explority:extracting",
+  "id": "starsky_explority:lunar_crystal_from_anorthosite_extracting",
+  "input": {
+    "id": "starsky_explority:anorthosite",
+    "Count": 4
+  },
+  "result": [
+    {
+      "id": "starsky_explority:lunar_crystal",
+      "Count": 1
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "Count": 2
+    },
+    {
+      "id": "minecraft:air",
+      "Count": 1
+    }
+  ]
+}

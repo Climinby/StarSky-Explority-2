@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "AAA",
+    " B ",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "starsky_explority:aluminium_ingot"
+    },
+    "B": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "starsky_explority:extractor",
+    "count": 1
+  }
+}

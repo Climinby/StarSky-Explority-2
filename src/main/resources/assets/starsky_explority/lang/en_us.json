@@ -1,0 +1,70 @@
+{
+  "item.starsky_explority.iron_collector": "Iron Collector",
+  "item.starsky_explority.diamond_collector": "Diamond Collector",
+  "item.starsky_explority.netherite_collector": "Netherite Collector",
+
+  "item.starsky_explority.raw_aluminium": "Raw Aluminium",
+  "item.starsky_explority.silver_nugget": "Silver Nugget",
+  "item.starsky_explority.raw_silver": "Raw Silver",
+  "item.starsky_explority.silver_ingot": "Silver Ingot",
+  "item.starsky_explority.aluminium_ingot": "Aluminium Ingot",
+  "item.starsky_explority.lunar_crystal": "Lunar Crystal",
+  "item.starsky_explority.stellarium_ingot": "Stellarium Ingot",
+  "item.starsky_explority.sample_empty": "Sample",
+  "item.starsky_explority.sample_earth": "Sample",
+  "item.starsky_explority.sample_moon": "Sample",
+  "item.starsky_explority.sample_mars": "Sample",
+  "item.starsky_explority.sample_venus": "Sample",
+  "item.starsky_explority.sample_mercury": "Sample",
+  "item.starsky_explority.moon_pebble": "Moon Pebble",
+  "item.starsky_explority.research_book_empty": "Research Book (Empty)",
+  "item.starsky_explority.research_book_silver": "Research Book (Silver)",
+  "item.starsky_explority.research_book_aluminium": "Research Book (Aluminium)",
+  "item.starsky_explority.research_book_lunar_crystal": "Research Book (Lunar Crystal)",
+  "item.starsky_explority.research_book_stellarium": "Research Book (Stellarium)",
+  "item.starsky_explority.sample.origin": "Origin: %s",
+  "item.starsky_explority.research_book.increment": "+ %s%% Research",
+
+  "item.starsky_explority.moon_cake": "Moon Cake",
+  "item.starsky_explority.silver_moon_cake": "Silver Moon Cake",
+
+  "item.starsky_explority.lunarian_spawn_egg": "Lunarian Spawn Egg",
+
+  "block.starsky_explority.moonveil_moss": "Moonveil Moss",
+  "block.starsky_explority.moon_soil": "Moon Soil",
+  "block.starsky_explority.anorthosite": "Anorthosite",
+  "block.starsky_explority.moon_rock": "Moon Rock",
+  "block.starsky_explority.analyzer": "Analyzer",
+  "block.starsky_explority.extractor": "Extractor",
+
+  "itemGroup.starsky_explority.tools_and_weapons": "SSE: Tools & Weapons",
+  "itemGroup.starsky_explority.ingredients": "SSE: Ingredients",
+  "itemGroup.starsky_explority.food": "SSE: Food",
+  "itemGroup.starsky_explority.blocks": "SSE: Blocks",
+  "itemGroup.starsky_explority.entities": "SSE: Entities",
+
+  "container.starsky_explority.analyzer.title": "Analyzer",
+  "container.starsky_explority.analyzer.odds": "Odds: %s%%",
+  "container.starsky_explority.analyzer.button.analyse.clickable": "Analyse",
+  "container.starsky_explority.analyzer.button.analyse.unclickable": "%s%%...",
+  "container.starsky_explority.analyzer.profile.text.unlocked": "Unlocked",
+  "container.starsky_explority.extractor.title": "Extractor",
+
+  "sound.starsky_explority.entity.lunarian.sight_lock": "Lunarian locks sight",
+  "sound.starsky_explority.entity.lunarian.teleport": "Lunarian teleports",
+  "sound.starsky_explority.entity.player.research_complete": "Research completes",
+  "sound.starsky_explority.item.research_book.use": "Research successes",
+  "sound.starsky_explority.item.research_book.fail": "Research fails",
+
+  "entity.starsky_explority.lunarian": "Lunarian",
+
+  "effect.starsky_explority.reflux": "Reflux",
+
+  "material.starsky_explority.aluminium": "Aluminium",
+  "material.starsky_explority.silver": "Silver",
+  "material.starsky_explority.lunar_crystal": "Lunar Crystal",
+  "material.starsky_explority.stellarium": "Stellarium",
+
+  "category.rei.starsky_explority.extracting": "Extracting",
+  "category.rei.starsky_explority.analyzing": "Analyzing"
+}

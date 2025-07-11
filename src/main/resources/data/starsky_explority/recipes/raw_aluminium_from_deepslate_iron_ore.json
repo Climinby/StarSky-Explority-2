@@ -1,0 +1,22 @@
+{
+  "type": "starsky_explority:extracting",
+  "id": "starsky_explority:raw_aluminium_from_deepslate_iron_ore",
+  "input": {
+    "id": "minecraft:deepslate_iron_ore",
+    "Count": 1
+  },
+  "result": [
+    {
+      "id": "starsky_explority:raw_aluminium",
+      "Count": 2
+    },
+    {
+      "id": "minecraft:raw_iron",
+      "Count": 1
+    },
+    {
+      "id": "minecraft:air",
+      "Count": 1
+    }
+  ]
+}
