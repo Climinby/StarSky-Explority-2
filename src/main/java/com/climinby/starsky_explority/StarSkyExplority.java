@@ -21,6 +21,8 @@ import com.climinby.starsky_explority.sound.SSESoundEvents;
 import com.climinby.starsky_explority.util.SSEBlockExtend;
 import com.climinby.starsky_explority.util.SSEServerDataReceiver;
 import com.climinby.starsky_explority.world.biome.SSEBiomeKeys;
+import com.climinby.starsky_explority.world.feature.SSEFeatures;
+import com.climinby.starsky_explority.world.gen.SSEWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -60,6 +62,8 @@ public class StarSkyExplority implements ModInitializer {
 		SSERecipeType.init();
 		SSEEntityDefaultAttributes.init();
 		SSEStatusEffects.init();
+//		SSEFeatures.initialize();
+		SSEWorldGeneration.init();
 
 		SSECommands.init();
 

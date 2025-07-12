@@ -12,7 +12,9 @@ public class TheMoonBiomeCreator {
             RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup
     ) {
         SpawnSettings spawnSettings = new SpawnSettings.Builder()
-                .spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 12, 4, 5))
+                .spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 50, 4, 5))
+                .spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.SKELETON, 100, 4, 4))
+                .spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.CREEPER, 100, 4, 4))
                 .build();
         GenerationSettings.LookupBackedBuilder lookupBackedBuilder = new GenerationSettings.LookupBackedBuilder(featureLookup, carverLookup);
         return new Biome.Builder()
@@ -21,10 +23,11 @@ public class TheMoonBiomeCreator {
                 .downfall(0.0F)
                 .effects(
                         new BiomeEffects.Builder()
+                                .grassColor(0x7cb6d3)
                                 .waterColor(4159204)
-                                .waterFogColor(0x111B2D)
-                                .fogColor(0x0F1736)
-                                .skyColor(OverworldBiomeCreator.getSkyColor(0.0F))
+                                .waterFogColor(1121069)
+                                .fogColor(5)
+                                .skyColor(5)
                                 .music(null)
                                 .build()
                 )
@@ -37,7 +40,9 @@ public class TheMoonBiomeCreator {
             RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup
     ) {
         SpawnSettings spawnSettings = new SpawnSettings.Builder()
-                .spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 12, 4, 5))
+                .spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 50, 4, 5))
+                .spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.SKELETON, 100, 4, 4))
+                .spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.CREEPER, 100, 4, 4))
                 .build();
         GenerationSettings.LookupBackedBuilder lookupBackedBuilder = new GenerationSettings.LookupBackedBuilder(featureLookup, carverLookup);
         return new Biome.Builder()
@@ -46,10 +51,11 @@ public class TheMoonBiomeCreator {
                 .downfall(0.0F)
                 .effects(
                         new BiomeEffects.Builder()
+                                .grassColor(0x7cb6d3)
                                 .waterColor(4159204)
                                 .waterFogColor(0x111B2D)
-                                .fogColor(0x0F1736)
-                                .skyColor(OverworldBiomeCreator.getSkyColor(0.0F))
+                                .fogColor(5)
+                                .skyColor(5)
                                 .music(null)
                                 .build()
                 )

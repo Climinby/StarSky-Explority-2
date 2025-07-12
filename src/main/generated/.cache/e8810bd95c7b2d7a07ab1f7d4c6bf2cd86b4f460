@@ -1,1 +1,6 @@
-// 1.20.4	2025-07-11T23:04:51.3142505	StarSky: Explority/World Gen
+// 1.20.4	2025-07-12T18:21:39.4696134	StarSky: Explority/World Gen
+f8a5092b82fd63505462f7990a01956793b6db7e data\starsky_explority\worldgen\biome\lunar_plains.json
+f8a5092b82fd63505462f7990a01956793b6db7e data\starsky_explority\worldgen\biome\lunar_wasteland.json
+8853971e7e3b90dd5dea3613fc57fcea3be603d9 data\starsky_explority\worldgen\configured_feature\lunar_silver_ore.json
+029720db449fa52f87b892310380b5909042a7c6 data\starsky_explority\dimension_type\the_moon.json
+27ebc6d21a2a1587394642b47fd69a595b2a53cd data\starsky_explority\worldgen\placed_feature\lunar_silver_ore_placed.json

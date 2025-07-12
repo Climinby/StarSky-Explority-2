@@ -22,10 +22,10 @@ public class SSEDimensions {
             THE_MOON_ID
     );
 
-    public static final RegistryKey<World> THE_MOON_LEVEL_KEY = RegistryKey.of(
-            RegistryKeys.WORLD,
-            THE_MOON_ID
-    );
+//    public static final RegistryKey<World> THE_MOON_LEVEL_KEY = RegistryKey.of(
+//            RegistryKeys.WORLD,
+//            THE_MOON_ID
+//    );
 
     public static final RegistryKey<DimensionType> THE_MOON_TYPE = RegistryKey.of(
             RegistryKeys.DIMENSION_TYPE,
@@ -46,7 +46,7 @@ public class SSEDimensions {
                 384, // height
                 384, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD,
-                DimensionTypes.OVERWORLD_ID,
+                THE_MOON_ID,
                 0.0F, // ambientLight
                 new DimensionType.MonsterSettings(
                         true, // piglinCanSpawn

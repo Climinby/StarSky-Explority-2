@@ -1,10 +1,7 @@
 package com.climinby.starsky_explority.block;
 
 import com.climinby.starsky_explority.StarSkyExplority;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ColoredFallingBlock;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -44,6 +41,16 @@ public class SSEBlocks {
                     .mapColor(MapColor.STONE_GRAY)
                     .requiresTool()
                     .strength(1.5F, 6.0F)
+            ),
+            true);
+    public static final Block LUNAR_SILVER_ORE = register(
+            "lunar_silver_ore",
+            new Block(AbstractBlock.Settings
+                    .create()
+                    .sounds(BlockSoundGroup.STONE)
+                    .mapColor(MapColor.STONE_GRAY)
+                    .requiresTool()
+                    .strength(2.0F, 7.0F)
             ),
             true);
     public static final Block MOONVEIL_MOSS = register(

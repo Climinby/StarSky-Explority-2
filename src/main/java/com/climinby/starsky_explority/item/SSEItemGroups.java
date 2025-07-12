@@ -104,6 +104,7 @@ public class SSEItemGroups {
                     itemGroup.add(SSEBlocks.ANORTHOSITE);
                     itemGroup.add(SSEBlocks.ANALYZER);
                     itemGroup.add(SSEBlocks.EXTRACTOR);
+                    itemGroup.add(SSEBlocks.LUNAR_SILVER_ORE);
                 });
 
         Registry.register(Registries.ITEM_GROUP, SSE_ENTITIES_KEY, SSE_ENTITIES);
