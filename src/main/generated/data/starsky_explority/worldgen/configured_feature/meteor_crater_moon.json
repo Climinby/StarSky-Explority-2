@@ -1,0 +1,10 @@
+{
+  "type": "starsky_explority:meteor_crater_moon",
+  "config": {
+    "dispersion": 32,
+    "radius_range": [
+      4,
+      5
+    ]
+  }
+}

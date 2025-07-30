@@ -59,10 +59,10 @@ public class ExtractorScreen extends HandledScreen<ExtractorScreenHandler> {
     protected void drawForeground(DrawContext context, int mouseX, int mouseY) {
         super.drawForeground(context, mouseX, mouseY);
         if(isWaterCharged) {
-            context.drawItem(new ItemStack(Items.WATER_BUCKET), titleX - 5, titleY + 51);
+            context.drawItem(new ItemStack(Items.WATER_BUCKET), titleX - 16, titleY + 51);
         }
         if(isLavaCharged) {
-            context.drawItem(new ItemStack(Items.LAVA_BUCKET), titleX + 35, titleY + 51);
+            context.drawItem(new ItemStack(Items.LAVA_BUCKET), titleX + 24, titleY + 51);
         }
         context.drawTexture(TEXTURE, titleX + 4, titleY + 27, 0, 166, (int)(36.0F * process), 18);
     }

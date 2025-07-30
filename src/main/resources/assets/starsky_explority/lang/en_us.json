@@ -35,8 +35,16 @@
   "block.starsky_explority.anorthosite": "Anorthosite",
   "block.starsky_explority.moon_rock": "Moon Rock",
   "block.starsky_explority.lunar_silver_ore": "Lunar Silver Ore",
+  "block.starsky_explority.aerolite_moon_soil": "Aerolite Moon Soil",
   "block.starsky_explority.analyzer": "Analyzer",
   "block.starsky_explority.extractor": "Extractor",
+
+  "block.starsky_explority.aluminium_block": "Aluminium Block",
+  "block.starsky_explority.silver_block": "Silver Block",
+
+  "block.starsky_explority.cryocacta": "Cryocacta",
+
+  "block.starsky_explority.moon_portal": "Moon Portal",
 
   "itemGroup.starsky_explority.tools_and_weapons": "SSE: Tools & Weapons",
   "itemGroup.starsky_explority.ingredients": "SSE: Ingredients",

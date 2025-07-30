@@ -98,13 +98,21 @@ public class SSEItemGroups {
         Registry.register(Registries.ITEM_GROUP, SSE_BLOCKS_KEY, SSE_BLOCKS);
         ItemGroupEvents.modifyEntriesEvent(SSE_BLOCKS_KEY)
                 .register(itemGroup -> {
+                    itemGroup.add(SSEBlocks.ANALYZER);
+                    itemGroup.add(SSEBlocks.EXTRACTOR);
+
                     itemGroup.add(SSEBlocks.MOONVEIL_MOSS);
                     itemGroup.add(SSEBlocks.MOON_SOIL);
                     itemGroup.add(SSEBlocks.MOON_ROCK);
                     itemGroup.add(SSEBlocks.ANORTHOSITE);
-                    itemGroup.add(SSEBlocks.ANALYZER);
-                    itemGroup.add(SSEBlocks.EXTRACTOR);
+                    itemGroup.add(SSEBlocks.CRYOCACTA);
+
                     itemGroup.add(SSEBlocks.LUNAR_SILVER_ORE);
+                    itemGroup.add(SSEBlocks.AEROLITE_MOON_SOIL);
+
+
+                    itemGroup.add(SSEBlocks.ALUMINIUM_BLOCK);
+                    itemGroup.add(SSEBlocks.SILVER_BLOCK);
                 });
 
         Registry.register(Registries.ITEM_GROUP, SSE_ENTITIES_KEY, SSE_ENTITIES);

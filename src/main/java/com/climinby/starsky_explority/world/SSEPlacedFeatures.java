@@ -6,21 +6,20 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.HeightmapPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 
 import java.util.List;
 
 public class SSEPlacedFeatures {
-    public static final RegistryKey<PlacedFeature> METEOR_CRATER_MOON_SMALL_PLACED = registerKey("meteor_crater_moon_small_placed");
+    public static final RegistryKey<PlacedFeature> METEOR_CRATER_MOON_PLACED_KEY = registerKey("meteor_crater_moon_placed");
 
     public static final RegistryKey<PlacedFeature> LUNAR_SILVER_ORE_PLACED_KEY = registerKey("lunar_silver_ore_placed");
+
+    public static final RegistryKey<PlacedFeature> MOON_VEGETATION_PLACED_KEY = registerKey("moon_vegetation_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -38,21 +37,29 @@ public class SSEPlacedFeatures {
                 )
         );
 
-//        register(
-//                context,
-//                METEOR_CRATER_MOON_SMALL_PLACED,
-//                configuredFeatureRegistryLookup.getOrThrow(SSEConfiguredFeatures.METEOR_CRATER_MOON_SMALL_KEY),
-//                List.of(
-//                        RarityFilterPlacementModifier.of(10),
-//                        HeightmapPlacementModifier.of(
-//                                Heightmap.Type.WORLD_SURFACE
-//                        )
-////                        PlacementModifier.HeightRangePlacementModifier.uniform(
-////                                PlacementModifier.HeightRangePlacementModifier.getBottomY(),
-////                                PlacementModifier.HeightRangePlacementModifier.getTopY()
-////                        )
-//                )
-//        );
+        register(
+                context,
+                METEOR_CRATER_MOON_PLACED_KEY,
+                configuredFeatureRegistryLookup.getOrThrow(SSEConfiguredFeatures.METEOR_CRATER_MOON_KEY),
+                List.of(
+                        HeightRangePlacementModifier.uniform(
+                                YOffset.fixed(50),
+                                YOffset.fixed(160)
+                        )
+                )
+        );
+
+        register(
+                context,
+                MOON_VEGETATION_PLACED_KEY,
+                configuredFeatureRegistryLookup.getOrThrow(SSEConfiguredFeatures.MOON_VEGETATION_KEY),
+                List.of(
+                        HeightRangePlacementModifier.uniform(
+                                YOffset.fixed(50),
+                                YOffset.fixed(160)
+                        )
+                )
+        );
     }
 
     private static RegistryKey<PlacedFeature> registerKey(String id) {

@@ -14,6 +14,8 @@ import net.minecraft.world.biome.SpawnSettings;
 public class SSEBiomeKeys {
     public static final RegistryKey<Biome> LUNAR_PLAINS = register("lunar_plains");
     public static final RegistryKey<Biome> LUNAR_WASTELAND = register("lunar_wasteland");
+    public static final RegistryKey<Biome> THORNWILDS = register("thornwilds");
+    public static final RegistryKey<Biome> LUNASEA = register("lunasea");
 
     private static RegistryKey<Biome> register(String name) {
         Identifier id = new Identifier(StarSkyExplority.MOD_ID, name);

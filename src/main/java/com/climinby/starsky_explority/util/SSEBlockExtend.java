@@ -35,7 +35,6 @@ public class SSEBlockExtend {
                             if (level == 100.0F) {
                                 Random random = new Random();
                                 int i = random.nextInt(30);
-                                System.out.println(i);
                                 ItemStack droppedItem;
                                 if (i < 5) {
                                     droppedItem = new ItemStack(SSEItems.RAW_ALUMINIUM, 1);
@@ -76,9 +75,7 @@ public class SSEBlockExtend {
                                             new Box(pos).expand(3.0),
                                             itemEntity -> true
                                     );
-                                    System.out.println("Discarding!!!!!!!!!!!!!!!");
                                     for(ItemEntity itemEntity : itemEntities) {
-                                        System.out.println(itemEntity.getStack().getItem());
                                         itemEntity.discard();
                                     }
                                 });

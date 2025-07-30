@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "starsky_explority:block/cryocacta",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "starsky_explority:block/cryocacta"
+    },
+    "axis=z": {
+      "model": "starsky_explority:block/cryocacta",
+      "x": 90
+    }
+  }
+}

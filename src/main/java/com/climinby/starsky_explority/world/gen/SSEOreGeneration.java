@@ -8,10 +8,16 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class SSEOreGeneration {
     public static void generateOres() {
+        generateLunarOres();
+    }
+
+    public static void generateLunarOres() {
         BiomeModifications.addFeature(
                 BiomeSelectors.includeByKey(
                         SSEBiomeKeys.LUNAR_WASTELAND,
-                        SSEBiomeKeys.LUNAR_PLAINS
+                        SSEBiomeKeys.LUNAR_PLAINS,
+                        SSEBiomeKeys.THORNWILDS,
+                        SSEBiomeKeys.LUNASEA
                 ),
                 GenerationStep.Feature.UNDERGROUND_ORES,
                 SSEPlacedFeatures.LUNAR_SILVER_ORE_PLACED_KEY

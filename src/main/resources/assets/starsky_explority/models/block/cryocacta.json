@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "starsky_explority:block/cryocacta_top",
+    "side": "starsky_explority:block/cryocacta_side"
+  }
+}

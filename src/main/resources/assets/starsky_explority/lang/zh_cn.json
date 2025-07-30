@@ -33,8 +33,16 @@
   "block.starsky_explority.anorthosite": "斜长岩",
   "block.starsky_explority.moon_rock": "月岩",
   "block.starsky_explority.lunar_silver_ore": "月银矿石",
+  "block.starsky_explority.aerolite_moon_soil": "含陨月壤",
   "block.starsky_explority.analyzer": "分析仪",
   "block.starsky_explority.extractor": "提取器",
+
+  "block.starsky_explority.aluminium_block": "铝块",
+  "block.starsky_explority.silver_block": "银块",
+
+  "block.starsky_explority.cryocacta": "晶刺仙人掌",
+
+  "block.starsky_explority.moon_portal": "月球传送门",
 
   "itemGroup.starsky_explority.tools_and_weapons": "SSE: 工具与武器",
   "itemGroup.starsky_explority.ingredients": "SSE: 材料",

@@ -1,15 +1,18 @@
 {
-	"required": true,
-	"package": "com.climinby.starsky_explority.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"ExampleMixin",
-		"PlayerEntityMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
+  "required": true,
+  "package": "com.climinby.starsky_explority.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ExampleMixin",
+    "GravityChangedEntityMixin",
+    "PlayerEntityMixin",
+    "StargateActivatingDetector",
+    "StargateEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
 	}
 }

@@ -16,6 +16,7 @@ import com.climinby.starsky_explority.registry.material.MaterialTypes;
 import com.climinby.starsky_explority.registry.planet.Galaxies;
 import com.climinby.starsky_explority.registry.planet.Planets;
 import com.climinby.starsky_explority.registry.sample.SampleTypes;
+import com.climinby.starsky_explority.registry.stargate.Stargates;
 import com.climinby.starsky_explority.screen.SSEScreenHandlers;
 import com.climinby.starsky_explority.sound.SSESoundEvents;
 import com.climinby.starsky_explority.util.SSEBlockExtend;
@@ -25,6 +26,9 @@ import com.climinby.starsky_explority.world.feature.SSEFeatures;
 import com.climinby.starsky_explority.world.gen.SSEWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.world.tick.Tick;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,6 +57,7 @@ public class StarSkyExplority implements ModInitializer {
 		SSEEntities.initialize();
 		SSESoundEvents.init();
 		SSEScreenHandlers.initialize();
+		Stargates.initialize();
 		InkTypes.initialize();
 		Galaxies.initialize();
 		Planets.initialize();
@@ -62,7 +67,7 @@ public class StarSkyExplority implements ModInitializer {
 		SSERecipeType.init();
 		SSEEntityDefaultAttributes.init();
 		SSEStatusEffects.init();
-//		SSEFeatures.initialize();
+		SSEFeatures.initialize();
 		SSEWorldGeneration.init();
 
 		SSECommands.init();

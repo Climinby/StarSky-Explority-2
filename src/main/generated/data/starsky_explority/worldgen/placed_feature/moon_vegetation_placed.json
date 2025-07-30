@@ -1,0 +1,17 @@
+{
+  "feature": "starsky_explority:moon_vegetation",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": 160
+        },
+        "min_inclusive": {
+          "absolute": 50
+        }
+      }
+    }
+  ]
+}

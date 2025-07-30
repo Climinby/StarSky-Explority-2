@@ -6,6 +6,7 @@ import com.climinby.starsky_explority.registry.SSERegistries;
 import com.climinby.starsky_explority.util.SSENetworkingConstants;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.gui.widget.ClickableWidget;
+import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;

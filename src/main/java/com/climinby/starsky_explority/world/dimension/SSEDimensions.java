@@ -1,7 +1,10 @@
 package com.climinby.starsky_explority.world.dimension;
 
 import com.climinby.starsky_explority.StarSkyExplority;
+import com.climinby.starsky_explority.registry.SSERegistries;
+import com.climinby.starsky_explority.registry.gravity_changed_dimension.GravityChangedDimension;
 import net.minecraft.registry.Registerable;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
@@ -20,6 +23,11 @@ public class SSEDimensions {
     public static final RegistryKey<DimensionOptions> THE_MOON_KEY = RegistryKey.of(
             RegistryKeys.DIMENSION,
             THE_MOON_ID
+    );
+
+    public static final RegistryKey<World> THE_MOON_LEVEL_KEY = registerGravityChangedWorld(
+            THE_MOON_ID,
+            1.0 / 6.0 // 1/6 gravity
     );
 
 //    public static final RegistryKey<World> THE_MOON_LEVEL_KEY = RegistryKey.of(
@@ -56,25 +64,25 @@ public class SSEDimensions {
                 )
         ));
     }
-//    public static final DimensionType THE_MOON = new DimensionType(
-//            OptionalLong.empty(),
-//            true, // hasSkyLight
-//            false, // hasCeiling
-//            true, // ultrawarm
-//            false, // natural
-//            1.0, // coordinateScale
-//            true, // bedWorks
-//            true, // respawnAnchorWorks
-//            -32, // minY
-//            288, // height
-//            288, // logicalHeight
-//            TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "infiniburn_overworld")),
-//            new Identifier("minecraft", "overworld"), // effects location
-//            0.0f, // ambientLight
-//            new DimensionType.MonsterSettings(false, false, ConstantIntProvider.create(7), 0)
-//    );
-//
-//    public static void init() {
-//
-//    }
+
+    private static RegistryKey<World> registerGravityChangedWorld(
+            Identifier id,
+            double gravityMultiplier
+    ) {
+        RegistryKey<World> worldRegistryKey = RegistryKey.of(
+                RegistryKeys.WORLD,
+                id
+        );
+
+        Registry.register(
+                SSERegistries.GRAVITY_CHANGED_DIMENSION,
+                id,
+                new GravityChangedDimension(
+                        worldRegistryKey,
+                        gravityMultiplier
+                )
+        );
+
+        return worldRegistryKey;
+    }
 }

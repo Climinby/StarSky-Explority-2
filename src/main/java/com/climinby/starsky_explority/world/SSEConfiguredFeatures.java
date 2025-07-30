@@ -2,21 +2,24 @@ package com.climinby.starsky_explority.world;
 
 import com.climinby.starsky_explority.StarSkyExplority;
 import com.climinby.starsky_explority.block.SSEBlocks;
-import com.climinby.starsky_explority.world.feature.MeteorCraterConfig;
-import com.climinby.starsky_explority.world.feature.MeteorCraterFeature;
+import com.climinby.starsky_explority.world.feature.MoonMeteorCraterConfig;
+import com.climinby.starsky_explority.world.feature.MoonVegetationConfig;
+import com.climinby.starsky_explority.world.feature.SSEFeatures;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.dynamic.Range;
 import net.minecraft.world.gen.feature.*;
 
 import java.util.List;
 
 public class SSEConfiguredFeatures {
-    public static final RegistryKey<ConfiguredFeature<?, ?>> METEOR_CRATER_MOON_SMALL_KEY = registerKey("meteor_crater_moon_small");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> METEOR_CRATER_MOON_KEY = registerKey("meteor_crater_moon");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LUNAR_SILVER_ORE_KEY = registerKey("lunar_silver_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MOON_VEGETATION_KEY = registerKey("moon_vegetation");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 //        MeteorCraterFeature feature = new MeteorCraterFeature(MeteorCraterConfig.CODEC);
@@ -35,6 +38,25 @@ public class SSEConfiguredFeatures {
                 Feature.ORE,
                 new OreFeatureConfig(lunarSilverOres, 10) // 9 is the vein size
         );
+
+
+        register(
+                context,
+                METEOR_CRATER_MOON_KEY,
+                SSEFeatures.METEOR_CRATER_MOON,
+                new MoonMeteorCraterConfig(new Range<>(4, 5), 32)
+        );
+
+        register(
+                context,
+                MOON_VEGETATION_KEY,
+                SSEFeatures.MOON_VEGETATION,
+                new MoonVegetationConfig(
+                        MoonVegetationConfig.BiomeType.THORNWILDS,
+                        3
+                )
+        );
+
     }
 
     private static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String id) {

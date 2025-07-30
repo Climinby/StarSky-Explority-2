@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "starsky_explority:block/moon_portal_ns"
+    },
+    "axis=z": {
+      "model": "starsky_explority:block/moon_portal_ew"
+    }
+  }
+}

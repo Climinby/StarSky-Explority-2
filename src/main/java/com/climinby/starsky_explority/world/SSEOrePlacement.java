@@ -16,4 +16,14 @@ public class SSEOrePlacement {
     public static List<PlacementModifier> modifiersWithRarity(int chance, PlacementModifier height) {
         return modifiers(RarityFilterPlacementModifier.of(chance), height);
     }
+
+    public static List<PlacementModifier> modifiersWithRarityAndCount(int chance, int count, PlacementModifier height) {
+        return List.of(
+                RarityFilterPlacementModifier.of(chance),
+                CountPlacementModifier.of(count),
+                SquarePlacementModifier.of(),
+                height,
+                BiomePlacementModifier.of()
+        );
+    }
 }

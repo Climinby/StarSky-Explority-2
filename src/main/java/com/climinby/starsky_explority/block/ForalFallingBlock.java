@@ -144,40 +144,12 @@ public class ForalFallingBlock extends FallingBlock {
     @Override
     public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
         super.onPlaced(world, pos, state, placer, itemStack);
-
-//        if(!world.isClient()) {
-//            BlockState upperState = world.getBlockState(pos.up());
-//            if(!upperState.isAir() && !upperState.isTransparent(world, pos.up())) {
-//                state.randomTick((ServerWorld) world, pos, world.getRandom());
-//            }
-//        }
-//        world.scheduleBlockTick(pos, this, 0);
     }
 
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-//        if(!world.isClient()) {
-//            if (direction == Direction.UP) {
-//                if (!neighborState.isAir() && !neighborState.isTransparent(world, neighborPos)) {
-//                    state.randomTick((ServerWorld) world, pos, world.getRandom());
-//                }
-//            }
-//        }
-
         world.scheduleBlockTick(pos, this, this.getFallDelay(), TickPriority.HIGH);
         return state;
-//        if(direction == Direction.UP) {
-//            if(!neighborState.isAir() && !neighborState.isTransparent(world, neighborPos)) {
-//
-//                this.degenerateTime = (30 + (world.getRandom().nextInt(61))) * 20;
-////                world.scheduleBlockTick(pos, this, (30 + Random.create().nextInt(60)) * 20);
-//            }
-//        } else if(direction == Direction.DOWN) {
-////            super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
-//        }
-////        world.scheduleBlockTick(pos, this, (30 + Random.create().nextInt(60)) * 20);
-//        world.scheduleBlockTick(pos, this, 0);
-//        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 
     private boolean canSpread(World world, BlockPos pos) {
